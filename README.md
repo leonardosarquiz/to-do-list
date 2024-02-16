@@ -1,4 +1,4 @@
-# Seu To-Do List com Vite
+# To-Do List com Vite
 
 Bem-vindo ao meu To-Do List desenvolvido com Vite. Este projeto permite que você adicione, edite, marque como concluído e exclua tarefas da sua lista de afazeres.
 
