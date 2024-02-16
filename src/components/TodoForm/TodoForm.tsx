@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+import './style.css'
 interface TodoInterface {
   addTodo: (todo: string) => void;
 }
@@ -13,8 +13,14 @@ export function TodoForm({addTodo}:TodoInterface) {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-   addTodo(value)
-   setvalue("");
+
+    if (value.trim() !== "") {
+      addTodo(value);
+      setvalue("");
+    } else {
+      
+      alert("Por favor, digite uma tarefa antes de adicionar!");
+    }
   }
 
   return (
